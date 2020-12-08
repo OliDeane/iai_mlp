@@ -1,2 +1,1 @@
-{"model_type": "Decision Tree Classifier", "criterion": "entropy", "test_size": 0.25, "accuracy": 0.22413145539906104}
-{"model_type": "Decision Tree Classifier", "criterion": "gini", "test_size": 0.25, "accuracy": 0.2203755868544601}
+{"model_type": "Decision Tree Regressor", "criterion": "mse", "test_size": 0.25, "mean_abs_err": 2.916338028169014, "mean_sqrd_err": 19.10676056338028, "Root_MSE": 4.371128065314522}
