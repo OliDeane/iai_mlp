@@ -1,0 +1,2 @@
+{"model_type": "Decision Tree Classifier", "criterion": "entropy", "test_size": 0.25, "accuracy": 0.22413145539906104}
+{"model_type": "Decision Tree Classifier", "criterion": "gini", "test_size": 0.25, "accuracy": 0.2203755868544601}
