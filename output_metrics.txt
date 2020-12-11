@@ -1,1 +1,7 @@
 {"model_type": "Decision Tree Regressor", "criterion": "mse", "test_size": 0.25, "mean_abs_err": 2.916338028169014, "mean_sqrd_err": 19.10676056338028, "Root_MSE": 4.371128065314522}
+{"model_type": "Decision Tree Regressor", "criterion": "mse", "test_size": 0.25, "mean_abs_err": 2.916338028169014, "mean_sqrd_err": 19.10676056338028, "Root_MSE": 4.371128065314522}
+{"model_type": "Random Forest", "criterion": "NA", "test_size": 0.25, "mean_abs_err": 2.189420657276995, "mean_sqrd_err": 9.63035957802817, "Root_MSE": 3.103282065495847}
+{"model_type": "Random Forest", "criterion": "NA", "test_size": 0.25, "mean_abs_err": 2.189420657276995, "mean_sqrd_err": 9.63035957802817, "Root_MSE": 3.103282065495847, "r2_error": 0.7776180556477346}
+{"n_estimators": 400, "min_samples_split": 2, "min_samples_leaf": 1, "max_features": "sqrt", "max_depth": null, "bootstrap": false}
+{"model_type": "rf_best_params", "r2_score": 0.8126948026732219, "mae": 2.0091115023474178}
+{"n_estimators": 400, "min_samples_split": 2, "min_samples_leaf": 1, "max_features": "sqrt", "max_depth": null, "bootstrap": false}
