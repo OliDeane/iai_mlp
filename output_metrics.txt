@@ -1,3 +1,4 @@
+{baseline mae (w/ simple regression against full_profile_bikes) : 3.84}
 {"model_type": "Decision Tree Regressor", "criterion": "mse", "test_size": 0.25, "mean_abs_err": 2.916338028169014, "mean_sqrd_err": 19.10676056338028, "Root_MSE": 4.371128065314522}
 {"model_type": "Decision Tree Regressor", "criterion": "mse", "test_size": 0.25, "mean_abs_err": 2.916338028169014, "mean_sqrd_err": 19.10676056338028, "Root_MSE": 4.371128065314522}
 {"model_type": "Random Forest", "criterion": "NA", "test_size": 0.25, "mean_abs_err": 2.189420657276995, "mean_sqrd_err": 9.63035957802817, "Root_MSE": 3.103282065495847}
@@ -5,3 +6,12 @@
 {"n_estimators": 400, "min_samples_split": 2, "min_samples_leaf": 1, "max_features": "sqrt", "max_depth": null, "bootstrap": false}
 {"model_type": "rf_best_params", "r2_score": 0.8126948026732219, "mae": 2.0091115023474178}
 {"n_estimators": 400, "min_samples_split": 2, "min_samples_leaf": 1, "max_features": "sqrt", "max_depth": null, "bootstrap": false}
+{"model_type": "Random Forest", "criterion": "NA", "test_size": 0.25, "mean_abs_err": 2.009642253521127, "mean_sqrd_err": 8.12478372769953, "Root_MSE": 2.8504006258242947, "r2_error": 0.8123844506357036}
+{"model_type": "Random Forest (tuned_params, medians inplace NaNs", "params": {"bootstrap": false, "ccp_alpha": 0.0, "criterion": "mse", "max_depth": null, "max_features": "sqrt", "max_leaf_nodes": null, "max_samples": null, "min_impurity_decrease": 0.0, "min_impurity_split": null, "min_samples_leaf": 1, "min_samples_split": 2, "min_weight_fraction_leaf": 0.0, "n_estimators": 400, "n_jobs": null, "oob_score": false, "random_state": null, "verbose": 0, "warm_start": false}, "mean_abs_err": 2.07027113608705, "mean_sqrd_err": 8.70664621796478, "Root_MSE": 2.9507026651231363, "r2_error": 0.8002288001993376}
+{"to_note": "Worse performance when NaNs replaced with medians values of correesponding collumns"}
+
+{"model_type": "Random Forest", "outlier_deletion" : "None", "features": 15, "params": {"bootstrap": false, "ccp_alpha": 0.0, "criterion": "mse", "max_depth": null, "max_features": "sqrt", "max_leaf_nodes": null, "max_samples": null, "min_impurity_decrease": 0.0, "min_impurity_split": null, "min_samples_leaf": 1, "min_samples_split": 2, "min_weight_fraction_leaf": 0.0, "n_estimators": 400, "n_jobs": null, "oob_score": false, "random_state": null, "verbose": 0, "warm_start": false}, "mean_abs_err": 1.9843300469483567, "mean_sqrd_err": 8.10349355399061, "Root_MSE": 2.8466635828616296, "r2_error": 0.8128760782002433}
+
+{"model_type": "Random Forest", "outlier_detection": "threshold:3.25", "features": 15, "params": {"bootstrap": false, "ccp_alpha": 0.0, "criterion": "mse", "max_depth": null, "max_features": "sqrt", "max_leaf_nodes": null, "max_samples": null, "min_impurity_decrease": 0.0, "min_impurity_split": null, "min_samples_leaf": 1, "min_samples_split": 2, "min_weight_fraction_leaf": 0.0, "n_estimators": 400, "n_jobs": null, "oob_score": false, "random_state": null, "verbose": 0, "warm_start": false}, "mean_abs_err": 1.9565205074207783, "mean_sqrd_err": 7.64424814292519, "Root_MSE": 2.7648233475079724, "r2_error": 0.7874516963207209}
+
+{"model_type": "Random Forest", "nan_filter": "nan_to_median", "outlier_detection": "threshold:3.00", "features": 16, "params": "best", "mean_abs_err": 1.858904860100275, "mean_sqrd_err": 7.159720712538412, "Root_MSE": 2.6757654442305685, "r2_error": 0.8042208689222764}
