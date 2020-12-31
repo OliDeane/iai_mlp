@@ -33,6 +33,8 @@ print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_p
 
 # Save model performance
 model_type = "Decision Tree Regressor"
+
+
 data = {"model_type": model_type, "criterion": criterion, "test_size" : test_size, "mean_abs_err": metrics.mean_absolute_error(y_test, y_pred),
 "mean_sqrd_err" : metrics.mean_squared_error(y_test, y_pred), "Root_MSE" : np.sqrt(metrics.mean_squared_error(y_test, y_pred))}
 with open('output_metrics.txt', 'a') as file:
