@@ -59,6 +59,7 @@ def get_clean_data_rf(full_data):
 
 def get_param_dist():
 
+    """Gets optimum parametes for random forest regressor"""
 
     # Number of trees in random forest
     n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
@@ -93,6 +94,13 @@ def get_feature_df(full_data):
     """Returns a dataframe with just the most predictive features, bikes included"""
 
     df_features = ['longitude', 'timestamp', 'bikes_3h_ago', 'full_profile_3h_diff_bikes', 'full_profile_bikes', 'short_profile_3h_diff_bikes', 'short_profile_bikes', 'airPressure.mb', 'weekhour', 'station', 'numDocks', 'hour', 'day', 'latitude', 'temperature.C', 'bikes']
+    df = full_data[df_features]
+    return df, df_features
+
+def get_test_features(full_data):
+    """Returns a dataframe with just the most predictive features, bikes excluded"""
+
+    df_features = ['longitude', 'timestamp', 'bikes_3h_ago', 'full_profile_3h_diff_bikes', 'full_profile_bikes', 'short_profile_3h_diff_bikes', 'short_profile_bikes', 'airPressure.mb', 'weekhour', 'station', 'numDocks', 'hour', 'day', 'latitude', 'temperature.C']
     df = full_data[df_features]
     return df, df_features
 
