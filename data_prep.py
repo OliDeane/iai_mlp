@@ -23,8 +23,10 @@ def nan_to_median(full_data):
 
         big_data = big_data.append(df, ignore_index=True)
         
-    for i in big_data.columns:
-        big_data = big_data[big_data[i].notna()]
+    # for i in big_data.columns:
+    #     big_data = big_data[big_data[i].notna()]
+
+    big_data = big_data.fillna(big_data.median())
 
     big_data = big_data.apply(pd.to_numeric, errors='coerce')
     return big_data
